@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad por Europa</title>
+    <link rel="stylesheet" href="estilos ofertas.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="AG">
+            <h1>Navidad por Europa</h1>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Agencia de Viajes">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    
+    <div class="of">
+        <ul>
+            <div class="hoteles"><strong>Hoteles:</strong>
+                <ul>
+                    <li class="hot1">Praga: Hotel Kings Court (5 estrellas, desayuno incluido).</li>
+                    <li class="hot1">Viena: Grand Hotel Wien (5 estrellas, desayuno incluido).</li>
+                    <li class="hot1">Budapest: Aria Hotel Budapest (5 estrellas, desayuno incluido).</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Traslados:</strong></li>
+                <ul>
+                    <li class="hot1"> Vuelos internacionales: 600€ por persona.</li>
+                    <li class="hot1"> Tren entre ciudades: 200€ por persona.</li>
+                <ul>
+                </div>
+            <div class="hoteles"><strong>Excursiones:</strong> 
+                <ul>
+                    <li class="hot1">Visita guiada por Praga: 50€ por persona.</li>
+                    <li class="hot1">Tour de mercadillos navideños en Viena: 40€ por persona</li>
+                    <li class="hot1">Crucero nocturno por el Danubio en Budapest: 70€ por persona.</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Comidas:</strong>
+                <ul>
+                    <li class="hot1">Desayuno incluido.</li>
+                    <li class="hot1">Cenas especiales navideñas en restaurantes locales: 50-70€ por persona.</li>
+                </ul>
+                
+            </div>
+    
+        </ul>
+        
+        <div class="hoteles"><strong>Itinerario de 8 días:</strong>
+        <ul>
+            <li class="hot1"><strong>Día 1:</strong> Llegada a Praga, traslado al hotel, tarde libre para explorar el casco antiguo iluminado.</li>
+            <li class="hot1"><strong>Día 2:</strong>Tour guiado por Praga: Puente de Carlos, Plaza de la Ciudad Vieja y Castillo de Praga.</li>
+            <li class="hot1"><strong>Día 3:</strong>Día libre para visitar los mercadillos navideños en la Plaza Wenceslao.</li>
+            <li class="hot1"><strong>Día 4:</strong> Tren a Viena, tarde libre para pasear por la Ringstrasse y disfrutar de las luces navideñas.</li>
+            <li class="hot1"><strong>Día 5:</strong>  Tour por los mercadillos navideños en Viena: Ayuntamiento y Palacio de Schönbrunn.</li>
+            <li class="hot1"><strong>Día 6:</strong> Tren a Budapest, tarde libre para explorar la Basílica de San Esteban y la Avenida Andrassy.</li>
+            <li class="hot1"><strong>Día 7:</strong> Crucero nocturno por el Danubio y visita al Bastión de los Pescadores.</li>
+            <li class="hot1"><strong>Día 8:</strong> Mañana libre, traslado al aeropuerto y vuelo de regreso a casa.</li>
+        </ul>
+        </div>
+
+        <div class="hoteles"><strong>Por qué visitar Europa en navidad</strong>
+            <div class="box">
+           <p class="hot1">Europa en Navidad ofrece una experiencia mágica con paisajes invernales, tradiciones encantadoras y decoraciones que transforman ciudades y pueblos en auténticos cuentos de hadas. Es el destino perfecto para disfrutar del espíritu navideño y vivir una temporada llena de festividades, gastronomía y cultura. </p>
+
+   <p class="hot2">Los mercados de Navidad son una tradición europea que ofrecen una atmósfera mágica con luces, música y productos artesanales.</p>
+
+  <p class="hot2">Durante la Navidad, las ciudades europeas se transforman con decoraciones y luces.</p>
+
+   <p class="hot2">Europa está llena de tradiciones navideñas únicas que varían de un país a otro.</p>
+
+   <p class="hot2">Europa ofrece una experiencia navideña invernal con paisajes nevados y actividades para disfrutar.</p>
+
+   <p class="hot2">La comida navideña en Europa es una delicia que varía según el país..</p>
+
+    <p class="hot2">Visitar Europa en Navidad es una experiencia inolvidable que combina lo mejor de la cultura, la gastronomía y los paisajes. Desde mercados tradicionales hasta paisajes nevados y actividades festivas, esta época es ideal para disfrutar de la magia de las fiestas en un entorno único.</p>
+        </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="navidad 1.jpeg" alt="Imagen 1">
+                <img src="navidad 2.jpeg" alt="Imagen 2">
+                <img src="navidad 3.jpeg" alt="Imagen 3">
+            </div>
+            <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+            <span class="next" onclick="moveSlide(1)">&#10095;</span>
+        </div>
+        
+        <script>
+            let index = 0;
+        
+            function moveSlide(step) {
+                const images = document.querySelector('.carousel-images');
+                const totalImages = document.querySelectorAll('.carousel-images img').length;
+                index = (index + step + totalImages) % totalImages; // Para ciclar las imágenes
+        
+                // Mover las imágenes
+                images.style.transform = `translateX(-${index * 100}%)`;
+            }
+        </script>
+        <div class="espacio">                  </div>
+
+       

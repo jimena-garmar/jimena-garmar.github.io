@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islas Baleares</title>
+    <link rel="stylesheet" href="estilos ofertas.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="AG">
+            <h1>Islas Baleares</h1>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Agencia de Viajes">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    
+    <div class="of">
+        <ul>
+            <div class="hoteles"><strong>Hoteles:</strong>
+                <ul>
+                    <li class="hot1">Mallorca: Hotel Nixe Palace (4 estrellas, desayuno incluido).</li>
+                    <li class="hot1">Menorca: Hotel Sant Joan (3 estrellas, desayuno incluido).</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Traslados:</strong></li>
+                <ul>
+                    <li class="hot1">Vuelos internos: 100€ por persona.</li>
+                    <li class="hot1"> Ferry: 40€ por persona.</li>
+                <ul>
+                </div>
+            <div class="hoteles"><strong>Excursiones:</strong> 
+                <ul>
+                    <li class="hot1">  Tour en barco por la costa: 50€ por persona.</li>
+                    <li class="hot1">Visita a Cueva del Hams: 30€ por persona</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Comidas:</strong>
+                <ul>
+                    <li class="hot1">Desayuno incluido.</li>
+                    <li class="hot1">almuerzo estimado diario: 30-50€ por persona.</li>
+                </ul>
+                
+            </div>
+    
+        </ul>
+        
+        <div class="hoteles"><strong>Itinerario de 6 días:</strong>
+        <ul>
+            <li class="hot1"><strong>Día 1:</strong> Llegada a Palma de Mallorca, traslado al hotel y tarde libre.</li>
+            <li class="hot1"><strong>Día 2:</strong> Tour por la ciudad de Palma, visita a la Catedral de Mallorca.</li>
+            <li class="hot1"><strong>Día 3:</strong> Excursión a la Cueva del Hams y visita a las playas cercanas.</li>
+            <li class="hot1"><strong>Día 4:</strong>  Ferry a Menorca, tarde libre en Mahón.</li>
+            <li class="hot1"><strong>Día 5:</strong> Excursión en barco por la costa de Menorca.</li>
+            <li class="hot1"><strong>Día 6:</strong>Regreso a Palma y vuelo de vuelta a casa.</li>
+
+        </ul>
+        </div>
+
+        <div class="hoteles"><strong>Por qué visitar las Islas Baleares</strong>
+            <div class="box">
+           <p class="hot1">Las Islas Baleares son un archipiélago español en el mar Mediterráneo, conocido por sus hermosos paisajes, playas impresionantes, rica historia y vibrante cultura. Este destino es popular tanto para aquellos que buscan relajarse en la playa como para quienes desean explorar su patrimonio histórico, disfrutar de una buena gastronomía y vivir una experiencia de lujo.</p>
+
+   <p class="hot2">Las Islas Baleares son famosas por sus playas de aguas cristalinas y arena fina. </p>
+
+   <p class="hot2">Aunque Ibiza es mundialmente famosa por su vida nocturna y discotecas de renombre.</p>
+
+   <p class="hot2">Las Islas Baleares tienen una rica historia que se refleja en sus monumentos.</p>
+
+   <p class="hot2">La comida de las Baleares refleja la riqueza de su entorno natural y su historia cultural.</p>
+
+   <p class="hot2">Las Islas Baleares son un paraíso para los amantes del senderismo y la naturaleza. Las montañas, los parques naturales y los caminos costeros son ideales para explorar</p>
+
+  <p class="hot2">Menorca es la isla más tranquila de las Baleares, famosa por su naturaleza virgen y menos desarrollada turísticamente.</p>
+
+   <p class="hot2">Ibiza es sinónimo de fiesta, con sus mundialmente famosas discotecas y bares en la playa.</p>
+
+   <p class="hot2">Las aguas cristalinas de las Baleares son perfectas para practicar deportes acuáticos</p>
+
+   <p class="hot2">Las Islas Baleares son conocidas por sus coloridos festivales y eventos culturales.</p>
+
+    <p class="hot2">Las Islas Baleares son un destino increíblemente diverso que ofrece algo para todos, desde playas de ensueño hasta paisajes montañosos y una rica oferta cultural. Ya sea que busques relajarte en un entorno paradisíaco, disfrutar de una vida nocturna vibrante o explorar la historia y gastronomía local, las Baleares tienen todo lo necesario para unas vacaciones inolvidables.</p>
+        </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="Baleares 1.jpeg" alt="Imagen 1">
+                <img src="Baleares 2.jpeg" alt="Imagen 2">
+                <img src="Baleares 3.jpeg" alt="Imagen 3">
+            </div>
+            <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+            <span class="next" onclick="moveSlide(1)">&#10095;</span>
+        </div>
+        
+        <script>
+            let index = 0;
+        
+            function moveSlide(step) {
+                const images = document.querySelector('.carousel-images');
+                const totalImages = document.querySelectorAll('.carousel-images img').length;
+                index = (index + step + totalImages) % totalImages; // Para ciclar las imágenes
+        
+                // Mover las imágenes
+                images.style.transform = `translateX(-${index * 100}%)`;
+            }
+        </script>
+
+        <div class="espacio">                  </div>

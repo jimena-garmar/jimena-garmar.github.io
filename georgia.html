@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia</title>
+    <link rel="stylesheet" href="estilos ofertas.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="AG">
+            <h1>Georgia</h1>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Agencia de Viajes">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    
+    <div class="of">
+        <ul>
+            <div class="hoteles"><strong>Hoteles:</strong>
+                <ul>
+                    <li class="hot1">Tiflis: Hotel Biltmore (5 estrellas, desayuno incluido).</li>
+                    <li class="hot1">Kazbegi: Rooms Hotel Kazbegi (4 estrellas, desayuno incluido).</li>
+                    <li class="hot1">Kutaisi: Best Western Kutaisi (4 estrellas, desayuno incluido).</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Traslados:</strong></li>
+                <ul>
+                    <li class="hot1">Vuelo internacional: 500€ por persona.</li>
+                    <li class="hot1"> Traslados internos en coche privado: 150€ por persona.</li>
+                <ul>
+                </div>
+            <div class="hoteles"><strong>Excursiones:</strong> 
+                <ul>
+                    <li class="hot1">Tour por la ciudad de Tiflis: 40€ por persona.</li>
+                    <li class="hot1">Visita a la Iglesia de la Trinidad de Gergeti (Kazbegi): 60€ por persona</li>
+                    <li class="hot1">Excursión a las Cuevas de Prometeo y el Cañón de Martvili (Kutaisi): 70€ por persona.</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Comidas:</strong>
+                <ul>
+                    <li class="hot1">Desayuno incluido.</li>
+                    <li class="hot1">Almuerzo y cena en restaurantes locales: 20-40€ por persona y por comida.</li>
+                </ul>
+                
+            </div>
+    
+        </ul>
+        
+        <div class="hoteles"><strong>Itinerario de 7 días:</strong>
+        <ul>
+            <li class="hot1"><strong>Día 1:</strong> Llegada a Tiflis, traslado al hotel y tarde libre para explorar la ciudad.</li>
+            <li class="hot1"><strong>Día 2:</strong>Tour por Tiflis: Casco antiguo, puente de la Paz, fortaleza Narikala y baños de azufre.</li>
+            <li class="hot1"><strong>Día 3:</strong>Traslado a Kazbegi, visita a la Iglesia de la Trinidad de Gergeti con vistas al Monte Kazbek.</li>
+            <li class="hot1"><strong>Día 4:</strong> Día libre en Kazbegi para explorar paisajes montañosos o realizar senderismo.</li>
+            <li class="hot1"><strong>Día 5:</strong>Traslado a Kutaisi, parada en la Catedral de Bagrati.</li>
+            <li class="hot1"><strong>Día 6:</strong> Excursión a las Cuevas de Prometeo y el Cañón de Martvili, tarde libre en Kutaisi.</li>
+            <li class="hot1"><strong>Día 7:</strong> Regreso a Tiflis y vuelo de vuelta a casa.</li>
+        </ul>
+        </div>
+
+        <div class="hoteles"><strong>Por qué visitar Georgia</strong>
+            <div class="box">
+           <p class="hot1">Visitar las Islas Griegas es una experiencia única por varias razones.</p>
+
+   <p class="hot2">Georgia es conocida por su diversidad geográfica y belleza natural.</p>
+
+   <p class="hot2">La capital de Georgia, Tiflis, combina tradición y modernidad.</p>
+
+   <p class="hot2">Georgia es una de las primeras naciones cristianas del mundo, y su patrimonio religioso es impresionante.</p>
+
+   <p class="hot2">La comida georgiana es un reflejo de su hospitalidad y diversidad cultural.</p>
+
+    <p class="hot2">Georgia es un país que lo tiene todo: paisajes asombrosos, una historia rica, una cocina deliciosa y una gente increíblemente acogedora. Ya sea que busques aventura, relajación o cultura, Georgia es un destino que promete una experiencia inolvidable.</p>
+        </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="georgia 1.jpeg" alt="Imagen 1">
+                <img src="georgia 2.jpeg" alt="Imagen 2">
+                <img src="georgia 3.jpeg" alt="Imagen 3">
+            </div>
+            <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+            <span class="next" onclick="moveSlide(1)">&#10095;</span>
+        </div>
+        
+        <script>
+            let index = 0;
+        
+            function moveSlide(step) {
+                const images = document.querySelector('.carousel-images');
+                const totalImages = document.querySelectorAll('.carousel-images img').length;
+                index = (index + step + totalImages) % totalImages; // Para ciclar las imágenes
+        
+                // Mover las imágenes
+                images.style.transform = `translateX(-${index * 100}%)`;
+            }
+        </script>
+        <div class="espacio">                  </div>
+
+       

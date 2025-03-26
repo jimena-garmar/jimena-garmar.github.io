@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisboa</title>
+    <link rel="stylesheet" href="estilos ofertas.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="AG">
+            <h1>Lisboa</h1>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Agencia de Viajes">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    
+    <div class="of">
+        <ul>
+            <div class="hoteles"><strong>Hoteles:</strong>
+                <ul>
+                    <li class="hot1">Lisboa: Hotel Tivoli Avenida Liberdade (5 estrellas, desayuno incluido).</li>
+                    
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Traslados:</strong></li>
+                <ul>
+                    <li class="hot1">Vuelo internacional: 300€ por persona.</li>
+                    <li class="hot1"> Traslados del aeropuerto al hotel: 30€ por persona.</li>
+                <ul>
+                </div>
+            <div class="hoteles"><strong>Excursiones:</strong> 
+                <ul>
+                    <li class="hot1"> Tour por el casco antiguo de Lisboa: 40€ por persona.</li>
+                    <li class="hot1">Excursión a Sintra, Cascais y Cabo da Roca: 70€ por persona</li>
+                    <li class="hot1"> Visita al Monasterio de los Jerónimos y la Torre de Belém: 30€ por persona.</li>
+                </ul>
+            </div>
+            <div class="hoteles"><strong>Comidas:</strong>
+                <ul>
+                    <li class="hot1">Desayuno incluido.</li>
+                    <li class="hot1">Almuerzo y cena en restaurantes locales: 20-40 por persona y por comida.</li>
+                </ul>
+                
+            </div>
+    
+        </ul>
+        
+        <div class="hoteles"><strong>Itinerario de 5 días:</strong>
+        <ul>
+            <li class="hot1"><strong>Día 1:</strong> Llegada a Lisboa, traslado al hotel, tarde libre para explorar la Avenida Liberdade.</li>
+            <li class="hot1"><strong>Día 2:</strong> Tour por el casco antiguo de Lisboa: Alfama, Barrio Alto, y Baixa-Chiado.</li>
+            <li class="hot1"><strong>Día 3:</strong> Excursión a Sintra, Cascais y Cabo da Roca.</li>
+            <li class="hot1"><strong>Día 4:</strong> Visita al Monasterio de los Jerónimos, Torre de Belém y degustación de pasteles de nata.</li>
+            <li class="hot1"><strong>Día 5:</strong> Mañana libre, traslado al aeropuerto y vuelo de regreso.</li>
+            
+        </ul>
+        </div>
+
+        <div class="hoteles"><strong>Por qué visitar Lisboa</strong>
+            <div class="box">
+           <p class="hot1">Lisboa, la capital de Portugal, es una ciudad fascinante que combina historia, cultura, paisajes espectaculares y una vibrante vida moderna. Con su arquitectura única, vistas al río Tajo y una energía acogedora, es un destino imperdible para los amantes de los viajes. </p>
+
+
+   <p class="hot2">Lisboa, la capital de Portugal, es una ciudad fascinante que combina historia, cultura, paisajes espectaculares y una vibrante vida moderna. Con su arquitectura única, vistas al río Tajo y una energía acogedora, es un destino imperdible para los amantes de los viajes. </p>
+
+   <p class="hot2">Lisboa es conocida como la "ciudad de las siete colinas", lo que significa que hay muchos miradores con vistas impresionantes.</p>
+
+   <p class="hot2">Los tranvías amarillos son un símbolo de Lisboa. El tranvía 28 es especialmente famoso por su ruta que atraviesa los barrios históricos, como Alfama, Graça y Baixa.</p>
+
+   <p class="hot2">isboa es un paraíso para los amantes de la comida.</p>
+
+  <p class="hot2">El Bairro Alto es el epicentro de la vida nocturna en Lisboa. Sus calles se llenan de bares, música en vivo y un ambiente vibrante. También puedes escuchar fado, la música tradicional portuguesa, en locales íntimos como A Tasca do Chico.</p>
+
+   <p class="hot2">Pasear por las orillas del río Tajo es una experiencia tranquila y relajante. Puedes disfrutar del Puente 25 de Abril, que recuerda al Golden Gate de San Francisco.</p>
+
+   <p class="hot2">Lisboa tiene una vibrante escena de arte callejero, con murales en diferentes barrios como Mouraria y Alcântara.</p>
+
+   <p class="hot2">Desde Lisboa, puedes hacer excursiones de un día a lugares espectaculares.</p>
+
+    <p class="hot2">En resumen, Lisboa combina tradición y modernidad de una manera única. Desde su rica historia hasta su vibrante cultura, sus miradores y su deliciosa gastronomía, esta ciudad tiene algo para todos. Si buscas una experiencia auténtica y llena de encanto, Lisboa es el destino perfecto.</p>
+        </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="lisboa 1.jpeg" alt="Imagen 1">
+                <img src="lisboa 2.jpeg" alt="Imagen 2">
+                <img src="lisboa 3.jpeg" alt="Imagen 3">
+            </div>
+            <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+            <span class="next" onclick="moveSlide(1)">&#10095;</span>
+        </div>
+        
+        <script>
+            let index = 0;
+        
+            function moveSlide(step) {
+                const images = document.querySelector('.carousel-images');
+                const totalImages = document.querySelectorAll('.carousel-images img').length;
+                index = (index + step + totalImages) % totalImages; // Para ciclar las imágenes
+        
+                // Mover las imágenes
+                images.style.transform = `translateX(-${index * 100}%)`;
+            }
+        </script>
+        <div class="espacio">                  </div>
+
+       
